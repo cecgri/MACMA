@@ -1,0 +1,106 @@
+<MACMA>
+	<Time>
+		<Parameter name="T_final" value="1550"/>
+		<Parameter name="age_T_and_condition" value="1"/>
+		<Parameter name="courantNumber" value="0.5"/>
+		<Parameter name="endAge" value="-500"/>
+		<Parameter name="fixed_timestep" value="0"/>
+		<Parameter name="resolution" value="0.5"/>
+		<Parameter name="runningTime" value="-1"/>
+		<Parameter name="startAge" value="3001.44"/>
+		<Parameter name="startingTime" value="-1"/>
+		<Parameter name="timeStep" value="50000"/>
+		<Parameter name="writeAges" value="1"/>
+		<Parameter name="writeImages" value="5"/>
+		<Parameter name="writeLogs" value="2.5"/>
+		<Parameter name="writeXml" value="5000"/>
+	</Time>
+	<Parameters>
+		<Parameter name="DeltaRho_p" value="65"/>
+		<Parameter name="E_m" value="350"/>
+		<Parameter name="E_pl" value="350"/>
+		<Parameter name="E_um" value="350"/>
+		<Parameter name="F_lim" value="2e+12"/>
+		<Parameter name="Qmax" value="0"/>
+		<Parameter name="R_min" value="300"/>
+		<Parameter name="T_m_init" value="1871.38"/>
+		<Parameter name="T_p" value="1625"/>
+		<Parameter name="Tau_ssc_p" value="80"/>
+		<Parameter name="Tau_sub_p" value="180"/>
+		<Parameter name="V_sink_p" value="1"/>
+		<Parameter name="alpha_pl" value="3.5e-05"/>
+		<Parameter name="alpha_um" value="2e-05"/>
+		<Parameter name="eta_ast_p" value="5e+20"/>
+		<Parameter name="eta_m_p" value="5e+22"/>
+		<Parameter name="eta_pl_p" value="1.25e+23"/>
+		<Parameter name="eta_subcont_p" value="5e+20"/>
+		<Parameter name="eta_um_p" value="5e+20"/>
+		<Parameter name="k_continent" value="0"/>
+		<Parameter name="k_ocean" value="3"/>
+		<Parameter name="min_plate_thick" value="0"/>
+		<Parameter name="rho_um_p" value="3300"/>
+		<Parameter name="subcont_warming_H" value="350"/>
+		<Parameter name="thick_ast" value="0"/>
+		<Parameter name="thick_continent" value="200"/>
+		<Parameter name="thick_subcont" value="0"/>
+	</Parameters>
+	<Model>
+		<Parameter name="K_BSE" value="240"/>
+		<Parameter name="K_cont" value="15000"/>
+		<Parameter name="Th_BSE" value="0.079"/>
+		<Parameter name="Th_cont" value="5.6"/>
+		<Parameter name="U_BSE" value="0.02"/>
+		<Parameter name="U_cont" value="1.3"/>
+		<Parameter name="alwaysSubduct" value="0"/>
+		<Parameter name="breakup_position" value="0.333"/>
+		<Parameter name="coeffBending" value="1"/>
+		<Parameter name="coeffMantleDrag" value="1"/>
+		<Parameter name="coeffRidgePush" value="1"/>
+		<Parameter name="coeffSlabPull" value="1"/>
+		<Parameter name="coeffSlabSuction" value="1"/>
+		<Parameter name="coeffViscousShear" value="1"/>
+		<Parameter name="constant_heat_value" value="40"/>
+		<Parameter name="constant_internal_heating" value="0"/>
+		<Parameter name="contGrowthCoeff" value="1"/>
+		<Parameter name="continental_growth" value="0"/>
+		<Parameter name="depletion_adaptative" value="0"/>
+		<Parameter name="depletion_always" value="1"/>
+		<Parameter name="depletion_never" value="0"/>
+		<Parameter name="fixed_configuration" value="0"/>
+		<Parameter name="initMode_brittle" value="1"/>
+		<Parameter name="initMode_constant" value="0"/>
+		<Parameter name="initMode_convective" value="0"/>
+		<Parameter name="initPlace_continents" value="1"/>
+		<Parameter name="initPlace_staples" value="1"/>
+		<Parameter name="initPlace_upperPlates" value="0"/>
+		<Parameter name="middle_breakup" value="0"/>
+		<Parameter name="min_thick_additional" value="1"/>
+		<Parameter name="randomSeed" value="164"/>
+		<Parameter name="reverseSubduction" value="0"/>
+		<Parameter name="slabPullWholeMantle" value="0"/>
+		<Parameter name="small_scale_convection" value="0"/>
+		<Parameter name="sscMode_constant" value="1"/>
+		<Parameter name="sscMode_convective" value="1"/>
+		<Parameter name="tauSub_randomNoise" value="20"/>
+		<Parameter name="upperPlates_ageRatioCriterion" value="0"/>
+		<Parameter name="upperPlates_minimumAge" value="50"/>
+		<Parameter name="upperPlates_ratioAgeValue" value="3"/>
+		<Parameter name="viscousShearWholeMantle" value="0"/>
+	</Model>
+	<Interfaces>
+		<Interface className="Ridge" position="29.9" leftAge="0" rightAge="0" slabDepth="0.0"/>
+		<Interface className="Ridge" position="74.8" leftAge="0" rightAge="0" slabDepth="0.0"/>
+		<Interface className="LeftSubduction" position="132.0" leftAge="4500" rightAge="55" slabDepth="826.4"/>
+		<Interface className="Ridge" position="209.2" leftAge="0" rightAge="0" slabDepth="0.0"/>
+		<Interface className="RightSubduction" position="229.0" leftAge="67" rightAge="4500" slabDepth="2011.6"/>
+		<Interface className="Ridge" position="288.5" leftAge="0" rightAge="0" slabDepth="0.0"/>
+		<Interface className="LeftSubduction" position="313.0" leftAge="4500" rightAge="25" slabDepth="1171.5"/>
+	</Interfaces>
+	<Continents>
+		<Continent id="Continent.0" position="313.0" length="51.0" leftAge="38" rightAge="25"/>
+		<Continent id="Continent.1" position="43.0" length="10.0" leftAge="125" rightAge="105"/>
+		<Continent id="Continent.2" position="132.0" length="70.0" leftAge="71" rightAge="55"/>
+		<Continent id="Continent.3" position="216.0" length="13.0" leftAge="67" rightAge="67"/>
+	</Continents>
+</MACMA>
+
